@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth, getRedirectResult,signInWithRedirect, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, getRedirectResult,signInWithRedirect, GoogleAuthProvider,  onAuthStateChanged } from "firebase/auth";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -21,4 +21,4 @@ const provider = new GoogleAuthProvider();
 const auth = getAuth();
 
 
-export {app, provider, auth, getRedirectResult, signInWithRedirect}
+export {app, provider, auth, getRedirectResult, signInWithRedirect,  onAuthStateChanged}
